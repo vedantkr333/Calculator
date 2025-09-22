@@ -3,8 +3,8 @@ public class calculator {
    public static void main(String[] args) {
     Scanner scanner=new Scanner(System.in);
     
-   
-    
+   char ch='y';
+    while(ch=='y'){
             System.out.print("Enter first number: ");
         double num1 = scanner.nextDouble();
 
@@ -13,7 +13,7 @@ public class calculator {
 
         System.out.print("Enter operation (+, -, *, /): ");
         char op = scanner.next().charAt(0);
-                double result;
+                double result=0;
         switch (op) {
             case '+': result = num1 + num2; break;
             case '-': result = num1 - num2; break;
@@ -26,12 +26,13 @@ public class calculator {
                 }
                 break;
             default:
-                System.out.println("Invalid operator");
-                return;
+                System.out.println("Invalid operator\nEnter valid operator and try again");
         }
         System.out.println("Result: " + result);
+         System.out.println("Press y if you want to continue calculating");
+         ch=scanner.next().charAt(0);
     }
     }
 
-   
+   } 
 
