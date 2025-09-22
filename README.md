@@ -1,2 +1,2 @@
 # Calculator
-Making calculator using java
+Making calculator using java.
