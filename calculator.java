@@ -2,6 +2,9 @@ import java.util.Scanner;
 public class calculator {
    public static void main(String[] args) {
     Scanner scanner=new Scanner(System.in);
+    
+   
+    
             System.out.print("Enter first number: ");
         double num1 = scanner.nextDouble();
 
@@ -28,6 +31,7 @@ public class calculator {
         }
         System.out.println("Result: " + result);
     }
+    }
 
-   } 
+   
 
